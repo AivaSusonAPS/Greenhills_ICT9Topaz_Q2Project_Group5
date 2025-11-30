@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>OBMC Enrollment Form</title>
+</head>
+<body>
+    <style>
+body {
+    background-image: url(https://obmontessori.orangeapps.ph/landing/obmontessori/images/Las%20Pinas%20Facade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-family: persian script MT, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #F2542D;
+}
+.navbar {
+        background-color: rgb(18, 116, 117);
+    }
+.navbar-brand img {
+        height: 50px;
+    }
+.container {
+    background-color: rgba(255, 255, 255, 0.552);
+    border-radius: 10px;
+}
+
+</style>
+     <nav class="navbar navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1724046681-141.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Page2.html">Courses Offer</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Page3.html">Enroll Now</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Page4.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Page5.html">About our Group</a>
+                </li>
+                    </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="container-fluid">
+    <h1 class="display-2">OBMC Student Enrollment Form</h1> <hr> 
+    <form>
+    <div class="row">
+        <div class="col">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+        </div>
+        <div class="col">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+        </div>
+        <div class="mb-3">
+            <label for="birthdate" class="form-label">Birthdate</label>
+            <input type="date" class="form-control" id="birthdate" required>
+        </div>
+         <div class="mb-3">
+            <label>Male</label><input type="radio" name="gender" class="form-check-input">
+            <label>Female</label><input type="radio" name="gender" class="form-check-input">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="mb-3">
+            <label for="gradeLevel" class="form-label">Grade Level</label>
+            <select class="form-select" id="gradeLevel" required>
+                </q><option value="" disabled selected>Select grade level</option>
+                <option value="nursery">Junior Casa</option>
+                <option value="kindergarten">Junior Advanced Casa</option>
+                <option value="Advancedcasa">Advanced Casa</option>
+                <option value="grade1">Grade 1</option>
+                <option value="grade2">Grade 2</option>
+                <option value="grade3">Grade 3</option>
+                <option value="grade4">Grade 4</option>
+                <option value="grade5">Grade 5</option>
+                <option value="grade6">Grade 6</option>
+                <option value="grade7">Grade 7</option>
+                <option value="grade8">Grade 8</option>
+                <option value="grade9">Grade 9</option>
+                <option value="grade10">Grade 10</option>
+                <option value="grade11">Grade 11</option>
+                <option value="grade12">Grade 12</option>
+            </select>                      
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input"><label>I confirm that the information provided is true and complete.</label>
+        </div> 
+        <button type="submit" class="btn btn-primary">Submit Enrollment</button>
+        </div>
+            
+    </form>
+    </div>
+    </div>
+    </div>
